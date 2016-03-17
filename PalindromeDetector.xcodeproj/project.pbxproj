@@ -13,6 +13,7 @@
 		105BA2A11C99D39D004603C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105BA29F1C99D39D004603C3 /* Main.storyboard */; };
 		105BA2A31C99D39D004603C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105BA2A21C99D39D004603C3 /* Assets.xcassets */; };
 		105BA2A61C99D39D004603C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105BA2A41C99D39D004603C3 /* LaunchScreen.storyboard */; };
+		105BA2AE1C9A09C1004603C3 /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105BA2AD1C9A09C1004603C3 /* Storyboard2.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		105BA2A21C99D39D004603C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		105BA2A51C99D39D004603C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		105BA2A71C99D39D004603C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		105BA2AD1C9A09C1004603C3 /* Storyboard2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				105BA29A1C99D39D004603C3 /* AppDelegate.m */,
 				105BA29C1C99D39D004603C3 /* ViewController.h */,
 				105BA29D1C99D39D004603C3 /* ViewController.m */,
+				105BA2AD1C9A09C1004603C3 /* Storyboard2.storyboard */,
 				105BA29F1C99D39D004603C3 /* Main.storyboard */,
 				105BA2A21C99D39D004603C3 /* Assets.xcassets */,
 				105BA2A41C99D39D004603C3 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105BA2AE1C9A09C1004603C3 /* Storyboard2.storyboard in Resources */,
 				105BA2A61C99D39D004603C3 /* LaunchScreen.storyboard in Resources */,
 				105BA2A31C99D39D004603C3 /* Assets.xcassets in Resources */,
 				105BA2A11C99D39D004603C3 /* Main.storyboard in Resources */,

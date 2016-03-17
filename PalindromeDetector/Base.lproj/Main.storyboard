@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,39 +18,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXw-Gf-kDt">
-                                <rect key="frame" x="295" y="185" width="44" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXw-Gf-kDt">
+                                <rect key="frame" x="278" y="177" width="44" height="30"/>
                                 <state key="normal" title="Check"/>
                                 <connections>
                                     <action selector="checkPalindrome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gWX-Cf-cOy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idu-qD-hQ3">
-                                <rect key="frame" x="297" y="76" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mY1-J2-VWo">
-                                <rect key="frame" x="270" y="115" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mY1-J2-VWo">
+                                <rect key="frame" x="252" y="115" width="97" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xE-jx-TbQ">
-                                <rect key="frame" x="246" y="431" width="127" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xE-jx-TbQ">
+                                <rect key="frame" x="237" y="376" width="127" height="30"/>
                                 <state key="normal" title="Create Palindrome"/>
                                 <connections>
                                     <action selector="createPalindrome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7x3-Fi-6JQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DR5-5A-8pA">
-                                <rect key="frame" x="281" y="351" width="239" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DR5-5A-8pA">
+                                <rect key="frame" x="191" y="289" width="219" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="219" id="ACg-zU-hJV"/>
+                                    <constraint firstAttribute="height" constant="21" id="r14-gJ-g5o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Palindrome Check" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idu-qD-hQ3">
+                                <rect key="frame" x="224" y="38" width="157" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="30V-RX-2hE"/>
+                                    <constraint firstAttribute="width" constant="145" id="jex-6W-5u3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="idu-qD-hQ3" firstAttribute="centerX" secondItem="mY1-J2-VWo" secondAttribute="centerX" id="0QJ-Hs-7wh"/>
+                            <constraint firstItem="idu-qD-hQ3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="5IT-Io-944"/>
+                            <constraint firstItem="8xE-jx-TbQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="217" id="Cf7-SK-qxz"/>
+                            <constraint firstItem="mY1-J2-VWo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="232" id="FXd-fO-L6C"/>
+                            <constraint firstItem="mY1-J2-VWo" firstAttribute="top" secondItem="idu-qD-hQ3" secondAttribute="bottom" constant="56" id="GgA-uA-ddD"/>
+                            <constraint firstItem="DR5-5A-8pA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IHN-BE-fZz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8xE-jx-TbQ" secondAttribute="trailing" constant="216" id="PXV-i2-HkP"/>
+                            <constraint firstItem="iXw-Gf-kDt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="258" id="RJI-ab-KCr"/>
+                            <constraint firstItem="8xE-jx-TbQ" firstAttribute="top" secondItem="DR5-5A-8pA" secondAttribute="bottom" constant="66" id="TVp-iH-nCb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iXw-Gf-kDt" secondAttribute="trailing" constant="258" id="ThE-hk-NS6"/>
+                            <constraint firstItem="DR5-5A-8pA" firstAttribute="top" secondItem="iXw-Gf-kDt" secondAttribute="bottom" constant="82" id="VII-6R-oel"/>
+                            <constraint firstItem="idu-qD-hQ3" firstAttribute="centerX" secondItem="8xE-jx-TbQ" secondAttribute="centerX" id="bep-W3-3XI"/>
+                            <constraint firstItem="iXw-Gf-kDt" firstAttribute="top" secondItem="mY1-J2-VWo" secondAttribute="bottom" constant="23" id="kph-Aq-2sf"/>
+                            <constraint firstItem="DR5-5A-8pA" firstAttribute="centerX" secondItem="8xE-jx-TbQ" secondAttribute="centerX" id="loD-RI-oEl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mY1-J2-VWo" secondAttribute="trailing" constant="231" id="tQw-4d-tDx"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="makePalindrome" destination="8xE-jx-TbQ" id="RoQ-bK-MNc"/>
