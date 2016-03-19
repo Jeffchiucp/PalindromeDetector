@@ -1,0 +1,6 @@
+{
+  "name": "Palindromedetector",
+  "tagline": "PalindromeDetector",
+  "body": "# PalindromeDetector\r\n\r\n# Introduction\r\n\r\nA palindrome is a word, phrase, or sentence whose letters are exactly mirrored around the center letter. Some examples include:\r\n\r\nracecar\r\nBob\r\nKanakanak (a city in Alaska)\r\nAibohphobia (the fear of palindromes)\r\nnever odd or even\r\nI prefer pi\r\nFlee to me, remote elf.\r\nNorma is as selfless as I am, Ron.\r\nNo sir! Away! A papaya war is on.\r\n\r\nThe qualification of a palindrome typically ignores spaces, punctuation, and capitalization, judging only the order of the letters themselves. Essentially, when a palindrome is reversed, its letters fall into the same order.\r\n\r\nIn this code-along we're going to write a method that can judge whether or not a particular string qualifies as a palindrome. The easiest way to judge a palindrome is simply to compare it to its reverse. However, there is no string reversal method built into the Objective-C language so we'll have to write this functionality ourselves. We'll accomplish this by writing another method called stringByReversingString: that we can call from within the stringIsPalindrome method by using the self keyword as the recipient object.\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
